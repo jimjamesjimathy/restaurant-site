@@ -1,0 +1,33 @@
+/* TEAM SECTION  */
+
+.team-section {
+    background-color: var(--dark-light);
+    padding-bottom: 125px;
+    position: relative;
+}
+
+.openTable {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.otStyle {
+    background-color: var(--text);
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33vh;
+}
+
+.openTableWidget {
+    position: relative;
+}

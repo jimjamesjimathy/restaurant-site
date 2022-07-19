@@ -1,0 +1,63 @@
+/* HOME SECTION */
+
+.home-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.home-section .home-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../img/lit.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    animation: zoomInOut 30s ease-in-out infinite;
+}
+
+.home-section .min-vh-100 {
+    padding: 100px 0;
+}
+
+.home-text {
+    padding: 0 15px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.home-text h1 {
+    width: 100%;
+    font-size: 9rem;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    line-height: 75px;
+    margin: 0 0 15px;
+    color: var(--text);
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.home-text p {
+    font-size: 1.3rem;
+    margin: 55px 0;
+    padding: 0 50px;
+    color: var(--text);
+    font-family: 'Comfortaa', sans-serif;
+}

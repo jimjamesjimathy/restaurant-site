@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* COLOR VARIABLES  */
+
+:root {
+    --dark: #3F3B40;
+    --dark-light: #736C75;
+    --maroon: #8C4843;
+    --skyBlue: #8ACDEA;
+    --brown: #9E643C;
+    --text: #EDE6F2;
+    --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* GLOBAL STYLES  */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Amatic sc', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Comfortaa', sans-serif;
+  background-color: var(--dark);
 }
 
-.App-link {
-  color: #61dafb;
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.sec-padding {
+    padding: 80px 0;
+}
+
+/* SECTION TITLE  */
+
+.section-title {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    margin: auto;
+    font-size: 5rem;
+    color: var(--text);
+    width: 50%;
+    border-bottom: 2px solid var(--brown);
+}
+
+.section-title h2::before {
+    display: block;
+    text-transform: uppercase;
+}
+
+/* BUTTONS  */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--dark);
+    background-color: var(--skyBlue);
+    line-height: 1.5;
+    user-select: none;
+    border: none;
+    transition: all 500ms ease;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.btn-default:hover {
+    padding: 8px 50px;
+    background-color: #BAE2F3;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+
+/* ANIMATIONS  */
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes spin01 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
