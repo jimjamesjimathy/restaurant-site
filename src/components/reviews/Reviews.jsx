@@ -1,80 +1,53 @@
+import { reviews } from '../../data';
+import { AiTwotoneStar } from 'react-icons/ai';
 import './reviews.css';
-import image from '../../img/testimonials/1.jpg';
+
+
 
 const Reviews = () => {
   return (
-    <section class="testimonials-section sec-padding" id="testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>Reviews</h2>
+    <section className="testimonials-section sec-padding" id="testimonials">
+      <div className="container">
+        <div className="row">
+          <div className="section-title">
+            <h2>Reviews</h2>
+          </div>
+        </div>
+
+        <div className="row">
+          {reviews.map((item) => (
+            
+            <div
+              className="testi-item"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              key={item.id}
+            >
+              <div className="testi-author">
+                <div className="testi-author-name">
+                  <h3>{item.name}</h3>
+                  <span>{item.title}</span>
+                </div>
+                <div className="testi-author-img">
+                  <img src={item.img} alt="" />
+                </div>
+              </div>
+              <div className='desc-wrap'>
+                <p>{item.desc}</p>
+              </div>
+              <div className="ratings">
+                <button><AiTwotoneStar size={35} /></button>
+                <button><AiTwotoneStar size={35} /></button>
+                <button><AiTwotoneStar size={35} /></button>
+                <button><AiTwotoneStar size={35} /></button>
+                <button><AiTwotoneStar size={35} /></button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div class="row">
-        <div class="testi-item" data-aos="zoom-out-right" data-aos-offset="250" data-aos-duration="1000">
-          <div class="testi-author">
-            <div class="testi-author-name">
-              <h3>James Kirkwood</h3>
-              <span>food eater</span>
-            </div>
-            <div class="testi-author-img">
-              <img src={image} alt="" />
-            </div>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsum, aliquam sed provident consequuntur adipisci voluptates? Accusamus tempore sapiente doloribus.</p>
-          <div class="ratings">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-
-        <div class="testi-item" data-aos="zoom-out-up" data-aos-offset="250" data-aos-duration="1000">
-          <div class="testi-author">
-            <div class="testi-author-name">
-              <h3>James Kirkwood</h3>
-              <span>food eater</span>
-            </div>
-            <div class="testi-author-img">
-              <img src={image} alt="" />
-            </div>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsum, aliquam sed provident consequuntur adipisci voluptates? Accusamus tempore sapiente doloribus.</p>
-          <div class="ratings">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-
-        <div class="testi-item" data-aos="zoom-out-left" data-aos-offset="250" data-aos-duration="1000">
-          <div class="testi-author">
-            <div class="testi-author-name">
-              <h3>James Kirkwood</h3>
-              <span>food eater</span>
-            </div>
-            <div class="testi-author-img">
-              <img src={image} alt="" />
-            </div>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsum, aliquam sed provident consequuntur adipisci voluptates? Accusamus tempore sapiente doloribus.</p>
-          <div class="ratings">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  )
+    </section>
+  );
 };
 
 export default Reviews;

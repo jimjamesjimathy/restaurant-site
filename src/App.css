@@ -4,12 +4,12 @@
 /* COLOR VARIABLES  */
 
 :root {
-    --dark: #3F3B40;
-    --dark-light: #736C75;
-    --maroon: #8C4843;
-    --skyBlue: #8ACDEA;
-    --brown: #9E643C;
-    --text: #EDE6F2;
+    --dark: #141414;
+    --dark-light: #14213D;
+    --beaver: #967D69;
+    --blue: #6586CD;
+    --green: #646F4B;
+    --text: #E5E5E5;
     --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
     scroll-behavior: smooth;
 }
@@ -106,7 +106,7 @@ a {
     font-size: 5rem;
     color: var(--text);
     width: 50%;
-    border-bottom: 2px solid var(--brown);
+    border-bottom: 2px solid var(--green);
 }
 
 .section-title h2::before {
@@ -118,15 +118,15 @@ a {
 
 .btn {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 40px;
     background-color: transparent;
     border-radius: 30px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    color: var(--dark);
-    background-color: var(--skyBlue);
+    color: var(--text);
+    background-color: var(--green);
     line-height: 1.5;
     user-select: none;
     border: none;
@@ -136,7 +136,7 @@ a {
 
 .btn-default:hover {
     padding: 8px 50px;
-    background-color: #BAE2F3;
+    background-color: #8E9C6D;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 5px;

@@ -20,21 +20,25 @@
 }
 
 .footer-item .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
     margin-top: 15px;
+    width: calc(100% / 2);
 }
 .footer-item .social-links a {
-    display: inline-flex;
-    height: 40px;
-    width: 40px;
-    color: var(--white-light);
-    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-size: 50px;
     align-items: center;
     justify-content: center;
     transition: color 500ms ease;
 }
 
 .footer-item .social-links a:hover {
-    color: var(--main-color);
+    color: var(--blue);
 }
 
 .footer .copyright {

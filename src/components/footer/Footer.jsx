@@ -1,43 +1,44 @@
+import { AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import './footer.css';
 
 
 
 const Footer = () => {
   return (
-    <footer class="footer" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="footer-item">
+    <footer className="footer" id="contact">
+      <div className="container">
+        <div className="row">
+          <div className="footer-item">
             <h3>Our location</h3>
             <p>
               123 Ave, SnorkleTown, <br /> WA, 98737
             </p>
           </div>
-          <div class="footer-item">
+          <div className="footer-item">
             <h3>Hours of Operation</h3>
             <p>
               Monday to Sunday <br /> 11:00am - 1:45am
             </p>
           </div>
-          <div class="footer-item">
+          <div className="footer-item">
             <h3>Contact Us</h3>
             <p>(216) 420-6969</p>
             <p>hotmale@hotmail.com</p>
-            <div class="social-links">
+            <div className="social-links">
               <a href="#">
-                <i class="fab fa-facebook-f"></i>
+                <AiFillFacebook />
               </a>
               <a href="#">
-                <i class="fab fa-instagram"></i>
+                <AiFillInstagram />
               </a>
               <a href="#">
-                <i class="fab fa-twitter"></i>
+                <AiOutlineTwitter />
               </a>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="copyright">&copy; 2022 - Jambone</div>
+        <div className="row">
+          <div className="copyright">&copy; 2022 - Jambone</div>
         </div>
       </div>
     </footer>

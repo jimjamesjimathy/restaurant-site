@@ -3,49 +3,70 @@
 .testimonials-section {
     padding-bottom: 50px;
     color: #fff;
-    height: 90vh;
+    height: 100vh;
 }
 
 .testi-item {
     width: calc((100% / 3) - 30px);
+    height: 55vh;
     margin: 0 15px 30px;
-    border: 2px solid var(--dark-light);
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
     border-radius: 8px;
+    background-color: var(--dark-light);
     box-shadow: var(--shadow);
 }
 
 .testi-author {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid var(--dark);
 }
 
 .testi-author h3 {
     margin: 0 0 3px;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: var(--beaver);
 }
 
 .testi-author span {
     display: block;
+    font-style: italic;
     font-size: 14px;
 }
 
 
 .testi-author img {
-    max-width: 60px;
+    max-width: 70px;
+    height: 90px;
     border-radius: 50%;
-    border: 3px solid var(--dark-light);
+    border: 3px solid var(--text);
     box-shadow: var(--shadow);
     transition: border-color 500ms ease;
 }
 
 .testi-item:hover .testi-author img {
-    border-color: var(--main-color);
+    border-color: var(--blue);
 }
 
 .testi-item p {
     margin: 15px 0;
+    font-size: 1.3rem;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .testi-item .ratings {
-    color: var(--main-color);
+
+}
+.ratings i {
+    color: var(--text);
+}
+.ratings button {
+    border: none;
+    background-color: transparent;
+    color: var(--text);
 }
