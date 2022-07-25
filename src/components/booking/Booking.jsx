@@ -1,5 +1,6 @@
-import OpenTable, { positions } from 'react-opentable';
-import 'react-opentable/dist/index.css';
+import OpenTable, { positions } from "react-opentable";
+import reso from '../../img/booking.jpg';
+import "react-opentable/dist/index.css";
 import "./booking.css";
 
 const Booking = () => {
@@ -12,12 +13,16 @@ const Booking = () => {
           </div>
         </div>
         <div className="row openTable">
+          <div className="filler">
+            <img src={reso} alt="" />
+          </div>
           <div className="otStyle">
             <OpenTable
               rid="123123"
               customClassName="openTableWidget"
               type="standard"
-              theme="wide"
+              theme="standard"
+              lang="en"
             />
           </div>
         </div>

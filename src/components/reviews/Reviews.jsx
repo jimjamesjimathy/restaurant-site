@@ -14,7 +14,7 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row item-row">
           {reviews.map((item) => (
             
             <div
@@ -36,11 +36,11 @@ const Reviews = () => {
                 <p>{item.desc}</p>
               </div>
               <div className="ratings">
-                <button><AiTwotoneStar size={35} /></button>
-                <button><AiTwotoneStar size={35} /></button>
-                <button><AiTwotoneStar size={35} /></button>
-                <button><AiTwotoneStar size={35} /></button>
-                <button><AiTwotoneStar size={35} /></button>
+                <button><AiTwotoneStar /></button>
+                <button><AiTwotoneStar /></button>
+                <button><AiTwotoneStar /></button>
+                <button><AiTwotoneStar /></button>
+                <button><AiTwotoneStar /></button>
               </div>
             </div>
           ))}

@@ -20,6 +20,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* Remove default margin */
@@ -64,6 +65,10 @@ a {
 
 ::-webkit-scrollbar {
     width: 0;
+}
+
+.App {
+    overflow: hidden;
 }
 
 .container {

@@ -51,7 +51,7 @@ const Menu = () => {
         <div className="map-wrap">
         {list.map((item) => (
           <div className="row menu-tab-content" key={item.id}>
-          <div className="menu-item" data-aos='zoom-in' data-aos-duration="1000">
+          <div className="menu-item" data-aos='zoom-in' data-aos-offset='-100px' data-aos-duration="1000">
             <div className="menu-item-title">
               <h3>{item.name}</h3>
               <p>{item.ingredients}</p>

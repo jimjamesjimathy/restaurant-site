@@ -5,11 +5,15 @@
     color: #fff;
     height: 100vh;
 }
+.item-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .testi-item {
-    width: calc((100% / 3) - 30px);
-    height: 55vh;
-    margin: 0 15px 30px;
+    flex: 1;
+    margin: 5px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -22,12 +26,13 @@
 
 .testi-author {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid var(--dark);
 }
 
 .testi-author h3 {
-    margin: 0 0 3px;
+    width: 100%;
     font-size: 3rem;
     letter-spacing: 3px;
     color: var(--beaver);
@@ -58,15 +63,29 @@
     font-size: 1.3rem;
     font-family: 'Comfortaa', sans-serif;
 }
-
-.testi-item .ratings {
-
-}
-.ratings i {
-    color: var(--text);
-}
 .ratings button {
     border: none;
     background-color: transparent;
     color: var(--text);
+    font-size: 35px;
+}
+
+@media (max-width: 1276px) {
+    .testi-author h3 {
+        font-size: 2rem;
+    }
+    .testi-author span {
+        display: block;
+        font-style: italic;
+    }
+    .desc-wrap p {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+    .ratings button {
+        border: none;
+        background-color: transparent;
+        color: var(--text);
+        font-size: 20px;
+    }
 }

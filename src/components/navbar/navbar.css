@@ -155,3 +155,15 @@ ul {
     color: var(--text);
     font-weight: bold;
 }
+
+@media (max-width: 900px) {
+    .header .nav {
+        width: 100vw;
+    }
+    .header .nav ul {
+        margin-top: 15%;
+    }
+    .header .nav-toggler.active {
+    transform: translate(-50%, 5px);
+    }
+}

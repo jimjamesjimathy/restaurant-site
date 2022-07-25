@@ -15,7 +15,7 @@
 
 .about-text h3 {
     width: 95%;
-    font-size: 55px;
+    font-size: 3.4rem;
     text-transform: uppercase;
     margin: 0 0 15px;
     color: var(--text);
@@ -64,4 +64,32 @@
     text-align: center;
     transform: translate(-50%, -50%);
     font-size: 30px;
+}
+
+@media (max-width: 950px) {
+    .about-text h3 {
+        font-size: 3rem;
+    }
+    .about-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 845px) {
+    .about-img {
+        display: none;
+    }
+    .about-content {
+        justify-content: center;
+        text-align: center;
+    }
+    .about-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .about-section h2 {
+        font-size: 4rem !important;
+    }
 }
