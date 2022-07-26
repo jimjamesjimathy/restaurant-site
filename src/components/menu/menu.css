@@ -96,6 +96,14 @@
     .menu-item-title p {
         font-size: .8rem;
     }
+    .menu-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-tab-item {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 388px) {

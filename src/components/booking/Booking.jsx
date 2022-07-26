@@ -23,7 +23,6 @@ const Booking = () => {
               rid="123123"
               type="standard"
               lang="en-US"
-              iframe={true}
             />
           </div>
         </div>

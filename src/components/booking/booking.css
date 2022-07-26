@@ -2,8 +2,8 @@
 
 .team-section {
     background-color: var(--dark-light);
-    padding-bottom: 125px;
     position: relative;
+    height: 100vh;
 }
 
 .openTable {
