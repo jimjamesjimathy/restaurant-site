@@ -5,7 +5,7 @@ import {
   entrees,
   sandwiches,
   drinks,
-  charcuterie
+  charcuterie,
 } from "../../data";
 import "./menu.css";
 
@@ -15,7 +15,7 @@ const Menu = () => {
   const [active, setActive] = useState("");
 
   useEffect(() => {
-    setList(sharePlates);
+    setList(charcuterie);
   }, []);
 
   useEffect(() => {
@@ -42,27 +42,86 @@ const Menu = () => {
         </div>
         <div className="row">
           <div className="menu-tabs">
-            <button onClick={handleClick} className={active === '6' ? 'menu-tab-item active' : 'menu-tab-item'} id={'6'} value="charcuterie">Cheese & Charcuterie</button>
-            <button onClick={handleClick} className={active === '1' ? 'menu-tab-item active' : 'menu-tab-item'} id={'1'} value="share-plates">Share Plates</button>
-            <button onClick={handleClick} className={active === '2' ? 'menu-tab-item active' : 'menu-tab-item'} id={'2'} value="salads-veggies">Salads & Veggies</button>
-            <button onClick={handleClick} className={active === '3' ? 'menu-tab-item active' : 'menu-tab-item'} id={'3'} value="entrees">Entrees</button>
-            <button onClick={handleClick} className={active === '4' ? 'menu-tab-item active' : 'menu-tab-item'} id={'4'} value="sandwiches">Sandwiches</button>
-            <button onClick={handleClick} className={active === '5' ? 'menu-tab-item active' : 'menu-tab-item'} id={'5'} value="drinks">Drinks</button>
+            <button
+              onClick={handleClick}
+              className={
+                active === "6" ? "menu-tab-item active" : "menu-tab-item"
+              }
+              id={"6"}
+              value="charcuterie"
+            >
+              Cheese & Charcuterie
+            </button>
+            <button
+              onClick={handleClick}
+              className={
+                active === "1" ? "menu-tab-item active" : "menu-tab-item"
+              }
+              id={"1"}
+              value="share-plates"
+            >
+              Share Plates
+            </button>
+            <button
+              onClick={handleClick}
+              className={
+                active === "2" ? "menu-tab-item active" : "menu-tab-item"
+              }
+              id={"2"}
+              value="salads-veggies"
+            >
+              Salads & Veggies
+            </button>
+            <button
+              onClick={handleClick}
+              className={
+                active === "3" ? "menu-tab-item active" : "menu-tab-item"
+              }
+              id={"3"}
+              value="entrees"
+            >
+              Entrees
+            </button>
+            <button
+              onClick={handleClick}
+              className={
+                active === "4" ? "menu-tab-item active" : "menu-tab-item"
+              }
+              id={"4"}
+              value="sandwiches"
+            >
+              Sandwiches
+            </button>
+            <button
+              onClick={handleClick}
+              className={
+                active === "5" ? "menu-tab-item active" : "menu-tab-item"
+              }
+              id={"5"}
+              value="drinks"
+            >
+              Drinks
+            </button>
           </div>
         </div>
 
         <div className="map-wrap">
-        {list.map((item) => (
-          <div className="row menu-tab-content" key={item.id}>
-          <div className="menu-item" data-aos='zoom-in' data-aos-offset='-100px' data-aos-duration="1000">
-            <div className="menu-item-title">
-              <h3>{item.name}</h3>
-              <p>{item.ingredients}</p>
+          {list.map((item) => (
+            <div className="row menu-tab-content" key={item.id}>
+              <div
+                className="menu-item"
+                data-aos="zoom-in"
+                data-aos-offset="-100px"
+                data-aos-duration="1000"
+              >
+                <div className="menu-item-title">
+                  <h3>{item.name}</h3>
+                  <p>{item.ingredients}</p>
+                </div>
+                <div className="menu-item-price">{item.price}</div>
+              </div>
             </div>
-            <div className="menu-item-price">{item.price}</div>
-          </div>
-        </div>
-        ))}
+          ))}
         </div>
       </div>
     </section>

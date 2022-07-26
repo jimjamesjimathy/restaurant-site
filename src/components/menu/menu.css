@@ -33,7 +33,7 @@
 }
 
 .menu-tab-item.active {
-    color: var(--beaver);
+    color: var(--blue);
     text-decoration: underline;
     font-weight: bold;
 }
