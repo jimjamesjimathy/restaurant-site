@@ -1,11 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
-import aboutImg from '../../img/about-img.jpg';
+import { useEffect } from "react";
+import aboutImg from "../../img/about-img.jpg";
 import "./about.css";
 
 const About = () => {
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -27,11 +26,19 @@ const About = () => {
             data-aos-duration="1000"
           >
             <h3>Welcome to Literary Tavern</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-              vel magni. Expedita tempora nam sequi earum molestiae omnis
-              reprehenderit aliquid, corrupti deleniti eligendi sit dignissimos
-              ullam illo quia necessitatibus eius.
+            <p className="about-info info1">
+              Come visit our newly updated location at 1031 Literary Road, in
+              Cleveland's Tremont neighborhood. With a brand new kitchen, we are
+              serving entrees, appetizers and sandwiches 6 days a week. We are
+              open for lunch Monday through Saturday and Happy Hour is from 3 -
+              6 pm.
+            </p>
+            <p className="about-info info2">
+              A favorite of area locals for many years, we are located in one of
+              the oldest buildings in Tremont. We have worked hard to preserve
+              the character of the historic location and offer an intimate
+              atmosphere, inventive cocktails and a variety of wine and beers,
+              chef made entrees and appetizers.
             </p>
             <a href="#our-menu" className="btn btn-default">
               view menu

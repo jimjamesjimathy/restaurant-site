@@ -16,7 +16,6 @@ const Reviews = () => {
 
         <div className="row item-row">
           {reviews.map((item) => (
-            
             <div
               className="testi-item"
               data-aos="zoom-in-up"

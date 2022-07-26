@@ -11,27 +11,26 @@ const Footer = () => {
           <div className="footer-item">
             <h3>Our location</h3>
             <p>
-              123 Ave, SnorkleTown, <br /> WA, 98737
+              1031 Literary Rd. <br /> Cleveland, OH 44113
             </p>
           </div>
           <div className="footer-item">
             <h3>Hours of Operation</h3>
             <p>
-              Monday to Sunday <br /> 11:00am - 1:45am
+              Monday to Sunday <br /> 11:00am - 1:00am
             </p>
           </div>
           <div className="footer-item">
             <h3>Contact Us</h3>
-            <p>(216) 420-6969</p>
-            <p>hotmale@hotmail.com</p>
+            <p>216.862.1916</p>
             <div className="social-links">
-              <a href="#">
+              <a href="https://www.facebook.com/literarytavern" rel='noreferrer' target="_blank">
                 <AiFillFacebook />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/literary_tavern/" rel='noreferrer' target="_blank">
                 <AiFillInstagram />
               </a>
-              <a href="#">
+              <a href="#" rel='noreferrer' target="_blank">
                 <AiOutlineTwitter />
               </a>
             </div>
