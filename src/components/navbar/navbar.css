@@ -160,6 +160,9 @@ ul {
     .header .nav {
         width: 100vw;
     }
+    .litLogo {
+        display: none;
+    }
     .header .nav ul {
         margin-top: 15%;
     }
@@ -171,9 +174,10 @@ ul {
 @media (max-width: 400px) {
     .header .nav ul li a {
         font-size: 40px;
+        margin: 13px 0;
     }
     .header .nav {
-        margin-top: 75px;
+        padding-top: 55px;
         padding-right: 10%;
     }
 }

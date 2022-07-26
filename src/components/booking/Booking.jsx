@@ -18,11 +18,12 @@ const Booking = () => {
           </div>
           <div className="otStyle">
             <OpenTable
-              rid="123123"
               customClassName="openTableWidget"
+              newtab={true}
+              rid="123123"
               type="standard"
-              theme="standard"
-              lang="en"
+              lang="en-US"
+              iframe={true}
             />
           </div>
         </div>

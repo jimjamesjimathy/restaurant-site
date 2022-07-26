@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   window.addEventListener('scroll', function() {
-    if(this.scrollY > 890) {
+    if(this.scrollY > 800) {
         document.querySelector('.header').classList.add('sticky');
     } else {
         document.querySelector('.header').classList.remove('sticky');

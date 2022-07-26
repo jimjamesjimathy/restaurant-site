@@ -33,12 +33,6 @@ const About = () => {
               reprehenderit aliquid, corrupti deleniti eligendi sit dignissimos
               ullam illo quia necessitatibus eius.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-              vel magni. Expedita tempora nam sequi earum molestiae omnis
-              reprehenderit aliquid, corrupti deleniti eligendi sit dignissimos
-              ullam illo quia necessitatibus eius.
-            </p>
             <a href="#our-menu" className="btn btn-default">
               view menu
             </a>

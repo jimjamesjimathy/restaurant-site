@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer" id="contact">
       <div className="container">
-        <div className="row">
+        <div className="row contact-info">
           <div className="footer-item">
             <h3>Our location</h3>
             <p>

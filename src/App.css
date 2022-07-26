@@ -171,3 +171,10 @@ a {
         transform: rotate(360deg);
     }
 }
+
+
+@media (max-width: 491px) {
+    .section-title h2 {
+        width: 100%;
+    }
+}

@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 388px) {
+    .menu-section .container h2 {
+        width: 100%;
+    }
     .menu-item-title h3 {
         font-size: 2rem;
     }
