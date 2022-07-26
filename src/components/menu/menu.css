@@ -88,3 +88,18 @@
         width: 95vw;
     }
 }
+
+@media (max-width: 655px) {
+    .menu-item-title h3 {
+        font-size: 2.3rem;
+    }
+    .menu-item-title p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 388px) {
+    .menu-item-title h3 {
+        font-size: 2rem;
+    }
+}
