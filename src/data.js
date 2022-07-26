@@ -170,14 +170,14 @@ export const entrees = [
     name: "CHICKEN BREAST ",
     ingredients:
       "PAN SEARED BONELESS CHICKEN BREAST, VEGETABLES, HERBS, CHICKEN PAN SAUCE (GF)",
-    price: "$17",
+    price: "$19",
   },
   {
     id: 5,
     name: "AGED PRIME SIRLOIN ",
     ingredients:
       "40 DAY AGED PRIME SIZ-OUNCE SIRLOIN, GREEN ONION AND GORGONZOLA MASHED YUKON POTATOES, RED PEPPER COULIS (GF)",
-    price: "$17",
+    price: "$26",
   },
 ];
 

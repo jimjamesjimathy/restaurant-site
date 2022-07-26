@@ -90,8 +90,14 @@
 }
 
 @media (max-width: 702px) {
+    .menu-item {
+        height: 20vh;
+    }
     .menu-item-title p {
         font-size: .8rem;
+    }
+    .menu-item-price  {
+        font-size: 1.2rem;
     }
 }
 
