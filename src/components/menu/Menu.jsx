@@ -5,6 +5,7 @@ import {
   entrees,
   sandwiches,
   drinks,
+  charcuterie
 } from "../../data";
 import "./menu.css";
 
@@ -23,6 +24,7 @@ const Menu = () => {
     if (category === "entrees") setList(entrees);
     if (category === "sandwiches") setList(sandwiches);
     if (category === "drinks") setList(drinks);
+    if (category === "charcuterie") setList(charcuterie);
   }, [category]);
 
   function handleClick(e) {
@@ -40,6 +42,7 @@ const Menu = () => {
         </div>
         <div className="row">
           <div className="menu-tabs">
+            <button onClick={handleClick} className={active === '6' ? 'menu-tab-item active' : 'menu-tab-item'} id={'6'} value="charcuterie">Cheese & Charcuterie</button>
             <button onClick={handleClick} className={active === '1' ? 'menu-tab-item active' : 'menu-tab-item'} id={'1'} value="share-plates">Share Plates</button>
             <button onClick={handleClick} className={active === '2' ? 'menu-tab-item active' : 'menu-tab-item'} id={'2'} value="salads-veggies">Salads & Veggies</button>
             <button onClick={handleClick} className={active === '3' ? 'menu-tab-item active' : 'menu-tab-item'} id={'3'} value="entrees">Entrees</button>
