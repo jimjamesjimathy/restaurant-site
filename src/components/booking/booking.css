@@ -47,6 +47,9 @@
     .filler {
         display: none;
     }
+    .otStyle {
+        width: auto;
+    }
 }
 
 @media (max-width: 491px) {
